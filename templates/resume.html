@@ -1,0 +1,31 @@
+<div class="resume">
+    <hr/>
+    
+    <label>Nom : </label><span id="resume_name"></span><br/>
+    <label>Prénom : </label><span id="resume_firstname"></span><br/>
+    <label>Date de naissance : </label><span id="resume_date"></span><br/>
+    
+    <label>Sexe : </label><span id="resume_sexeSelect"></span><br/>
+    <span class="womanOnly"><label>Nom de jeune fille: </label><span id="resume_ladyname"></span><br/></span>
+    
+    <label>Nombre d'enfant(s) :</label><span id="resume_nbChild"></span><br/>
+    
+    <hr/>
+    
+    <label>Adresse : </label><span id="resume_address"></span><br/>
+    <label>Type de voie : </label><span id="resume_typeaddr"></span><br/>
+    <label>N° de voie : </label><span id="resume_numaddr"></span><br/>
+    <label>Nom de voie : </label><span id="resume_nameaddr"></span><br/>
+    <label>Code Postal : </label><span id="resume_postcode"></span><br/>
+    <label>Ville : </label><span id="resume_city"></span><br/>
+    <label>Pays : </label><span id="resume_country"></span><br/>
+    
+    <hr />
+    
+    <button class="clearBtn" onclick="clearLocalStorage()">Effacer</button>
+    <button class="sendBtn" onclick="sendMail()">Envoyer</button>
+    
+    <div class="mailConfirmation disabled" id="mailConfirmation">
+        <h4>Les informations ont bien été transmises</h4>
+    </div>
+</div>

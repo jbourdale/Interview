@@ -1,0 +1,39 @@
+<div class="informations">
+    <form action="">
+        <div class="input">
+            <label>Nom : </label>
+            <input name="name" type="text"/>
+        </div>
+        
+        <div class="input">
+            <label>Prénom : </label>
+            <input name="firstname" type="text"/>
+        </div>
+        
+        <div class="input">
+            <label>Date de naissance : </label>
+            <input name="date" type="date"/>
+        </div>
+        
+        <div class="input">
+            <label>Sexe : </label>
+            <select id="sexeSelect" onchange="checkIfWomanSelected()" name="sexeSelect">
+                <option disabled selected>Pick one</option>
+                <option value="M">Homme</option>
+                <option value="F">Femme</option>
+                <option value="casse_couilles">Autres</option>
+            </select>
+        </div>    
+        
+        <div class="input womanOnly">
+            <label>Nom de jeune fille :</label>
+            <input name="ladyname" type="text"/>
+        </div>
+        
+        <div class="input">
+            <label>Nombre d'enfant(s) :</label>
+            <input type="nombre" min="0" name="nbChild"/>
+        </div>
+    </form>
+    <script src="../js/onlyWoman.js"></script>
+</div>

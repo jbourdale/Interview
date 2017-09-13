@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;   
+}
+
+.tabs {
+    padding: 8px;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+    display: inline-block;
+    padding: 0px 4px;
+}
+
+button:focus {outline:0;}
+
+.buttons li {
+    display: inline-block;
+    width: 33%;
+}
+
+.buttons button {
+    width: 100%;
+    background-color: #f1f1f1;
+    border: none;
+    border-bottom: 3px solid black;
+    text-align: left;
+    font-size: 18px;
+    transition: border 0.3 ease;
+}
+
+.tabActive { border-bottom: 3px solid #f44336; }
+.buttons button:hover {
+    border-bottom: 3px solid #f44336; 
+    cursor: pointer;
+}
+
+.tab {
+    opacity: 0;
+    height: 0;
+    display: none;
+}
+
+.tab.active {
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    display: block;
+}
+
+.input {
+    padding: 16px;
+    margin: 8px;
+    background-color: #fff;
+}
+.input label{
+    float: left;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 50%;   
+    outline: 0;
+    margin-left: 16px;
+}
+
+select {
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    margin-left: 16px;
+    outline: 0;
+}
+
+.womanOnly{ display: none; }
+.womanOnly.enabled{ display: block; }
+
+
+.mailConfirmation { display: block; }
+.mailConfirmation.disabled{ display: none; }
